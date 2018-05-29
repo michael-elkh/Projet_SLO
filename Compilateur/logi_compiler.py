@@ -288,15 +288,11 @@ class LogiCompiler():
                 return False
 
 if __name__ == '__main__':
-    """
     if len(sys.argv) != 3:
         print 'usage: ./logi_compiler lsn_assembly_file output_file.circ'
         sys.exit(0)
     in_file = sys.argv[1]
     out_file = sys.argv[2]
-    """
-    in_file = "test.lsn"
-    out_file = "rom.base"
     assembly = [line.rstrip().lower() for line in open(in_file, 'r')]
     logicomp = LogiCompiler()
     binary_list = logicomp.get_binary_list(assembly)

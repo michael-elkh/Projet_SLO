@@ -56,4 +56,5 @@ R2 = 1
 R1 = [0x00]
 R3 = R1 - R2
 bcn -2
-b -48
+#Retour au début
+b 0
