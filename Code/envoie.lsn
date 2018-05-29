@@ -1,0 +1,59 @@
+#Lecture de la valeur du joystick de gauche.
+R0 = [0x04]
+#Envoi de la première partie
+R1 = R0 >> 3
+R2 = 0b01000000
+R1 = R1 + R2
+R1 = par R1
+[0x01] = R1
+#Pause de 5[ms] entre deux envois
+R1 = 5
+[0x00] = R1
+R2 = 1
+R1 = [0x00]
+R3 = R1 - R2
+bcn -2
+#Envoi de la deuxième partie 
+R1 = R0 << 4
+R1 = R1 >> 3
+R2 = 0b01100000
+R1 = R1 + R2
+R1 = par R1
+[0x01] = R1
+#Pause de 5[ms] entre deux envois
+R1 = 5
+[0x00] = R1
+R2 = 1
+R1 = [0x00]
+R3 = R1 - R2
+bcn -2
+#Lecture de la valeur du joystick de droite.
+R0 = [0x05]
+#Envoi de la première partie
+R1 = R0 >> 3
+R2 = 0b02000000
+R1 = R1 + R2
+R1 = par R1
+[0x01] = R1
+#Pause de 5[ms] entre deux envois
+R1 = 5
+[0x00] = R1
+R2 = 1
+R1 = [0x00]
+R3 = R1 - R2
+bcn -2
+#Envoi de la deuxième partie 
+R1 = R0 << 4
+R1 = R1 >> 3
+R2 = 0b02100000
+R1 = R1 + R2
+R1 = par R1
+[0x01] = R1
+#Pause de 5[ms] entre deux envois
+R1 = 5
+[0x00] = R1
+R2 = 1
+R1 = [0x00]
+R3 = R1 - R2
+bcn -2
+b -48
