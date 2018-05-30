@@ -48,32 +48,32 @@ bcz 22
 #Màj Timer
 R3 = R1 + R1
 bcz 4
-R4 = R4 + R2 #Deuxième partie
-[0x00] = R4
+R1 = R4 + R2 #Deuxième partie
+[0x00] = R1
 b 0
 R4 = R2 #Première partie
 b 0
 #Màj Servo
 R3 = R1 + R1
 bcz 4
-R5 = R5 + R2 #Deuxième partie
-[0x00] = R5
+R1 = R5 + R2 #Deuxième partie
+[0x00] = R1
 b 0
 R5 = R2 #Première partie
 b 0
 #Màj Moteur high-time
 R3 = R1 + R1
 bcz 4
-R6 = R6 + R2 #Deuxième partie
-[0x00] = R6
+R1 = R6 + R2 #Deuxième partie
+[0x00] = R1
 b 0
 R6 = R2 #Première partie
 b 0
 #Màj Moteur période
 R3 = R1 + R1
 bcz 4
-R7 = R7 + R2 #Deuxième partie
-[0x00] = R7
+R1 = R7 + R2 #Deuxième partie
+[0x00] = R1
 b 0
 R7 = R2 #Première partie
 b 0
