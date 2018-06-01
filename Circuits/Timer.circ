@@ -4,7 +4,8 @@
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
-      <a name="appear" val="center"/>
+      <a name="fanout" val="32"/>
+      <a name="incoming" val="32"/>
     </tool>
     <tool name="Pin">
       <a name="output" val="true"/>
@@ -33,44 +34,44 @@
   <lib desc="#I/O" name="5"/>
   <lib desc="#HDL-IP" name="6">
     <tool name="VHDL Entity">
-      <a name="content">--------------------------------------------------------------------------------&#13;
--- HEIG-VD, institute REDS, 1400 Yverdon-les-Bains&#13;
--- Project :&#13;
--- File    :&#13;
--- Autor   :&#13;
--- Date    :&#13;
---&#13;
---------------------------------------------------------------------------------&#13;
--- Description :&#13;
---&#13;
---------------------------------------------------------------------------------&#13;
-&#13;
-library ieee;&#13;
-  use ieee.std_logic_1164.all;&#13;
-  --use ieee.numeric_std.all;&#13;
-&#13;
-entity VHDL_Component is&#13;
-  port(&#13;
-  ------------------------------------------------------------------------------&#13;
-  --Insert input ports below&#13;
-    horloge_i  : in  std_logic;                    -- input bit example&#13;
-    val_i      : in  std_logic_vector(3 downto 0); -- input vector example&#13;
-  ------------------------------------------------------------------------------&#13;
-  --Insert output ports below&#13;
-    max_o      : out std_logic;                    -- output bit example&#13;
-    cpt_o      : out std_logic_Vector(3 downto 0)  -- output vector example&#13;
-    );&#13;
-end VHDL_Component;&#13;
-&#13;
---------------------------------------------------------------------------------&#13;
---Complete your VHDL description below&#13;
-architecture type_architecture of VHDL_Component is&#13;
-&#13;
-&#13;
-begin&#13;
-&#13;
-&#13;
-end type_architecture;&#13;
+      <a name="content">--------------------------------------------------------------------------------
+-- HEIG-VD, institute REDS, 1400 Yverdon-les-Bains
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+library ieee;
+  use ieee.std_logic_1164.all;
+  --use ieee.numeric_std.all;
+
+entity VHDL_Component is
+  port(
+  ------------------------------------------------------------------------------
+  --Insert input ports below
+    horloge_i  : in  std_logic;                    -- input bit example
+    val_i      : in  std_logic_vector(3 downto 0); -- input vector example
+  ------------------------------------------------------------------------------
+  --Insert output ports below
+    max_o      : out std_logic;                    -- output bit example
+    cpt_o      : out std_logic_Vector(3 downto 0)  -- output vector example
+    );
+end VHDL_Component;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+architecture type_architecture of VHDL_Component is
+
+
+begin
+
+
+end type_architecture;
 </a>
     </tool>
   </lib>
@@ -140,57 +141,79 @@ end TCL_Generic;&#13;
     <a name="clabelfont" val="SansSerif bold 16"/>
     <a name="circuitnamedbox" val="true"/>
     <a name="circuitvhdlpath" val=""/>
-    <wire from="(760,180)" to="(760,190)"/>
-    <wire from="(180,210)" to="(240,210)"/>
-    <wire from="(920,130)" to="(920,140)"/>
-    <wire from="(910,120)" to="(910,130)"/>
-    <wire from="(460,40)" to="(460,50)"/>
-    <wire from="(270,270)" to="(270,280)"/>
-    <wire from="(460,80)" to="(460,100)"/>
-    <wire from="(840,150)" to="(880,150)"/>
-    <wire from="(880,150)" to="(920,150)"/>
-    <wire from="(690,140)" to="(800,140)"/>
-    <wire from="(380,50)" to="(420,50)"/>
-    <wire from="(210,250)" to="(240,250)"/>
-    <wire from="(880,200)" to="(900,200)"/>
-    <wire from="(930,200)" to="(950,200)"/>
-    <wire from="(300,210)" to="(330,210)"/>
-    <wire from="(450,110)" to="(470,110)"/>
-    <wire from="(120,300)" to="(140,300)"/>
-    <wire from="(410,30)" to="(420,30)"/>
-    <wire from="(450,40)" to="(460,40)"/>
-    <wire from="(460,50)" to="(470,50)"/>
-    <wire from="(450,80)" to="(460,80)"/>
-    <wire from="(460,100)" to="(470,100)"/>
-    <wire from="(120,360)" to="(130,360)"/>
-    <wire from="(120,330)" to="(130,330)"/>
-    <wire from="(940,150)" to="(950,150)"/>
-    <wire from="(790,160)" to="(800,160)"/>
-    <wire from="(910,130)" to="(920,130)"/>
-    <wire from="(760,180)" to="(770,180)"/>
-    <wire from="(760,170)" to="(770,170)"/>
-    <wire from="(880,150)" to="(880,200)"/>
-    <comp lib="0" loc="(450,110)" name="Tunnel">
+    <wire from="(710,170)" to="(710,180)"/>
+    <wire from="(700,210)" to="(700,220)"/>
+    <wire from="(510,70)" to="(760,70)"/>
+    <wire from="(980,90)" to="(980,100)"/>
+    <wire from="(990,100)" to="(990,110)"/>
+    <wire from="(820,150)" to="(820,160)"/>
+    <wire from="(270,160)" to="(270,170)"/>
+    <wire from="(910,130)" to="(950,130)"/>
+    <wire from="(510,70)" to="(510,100)"/>
+    <wire from="(760,110)" to="(870,110)"/>
+    <wire from="(950,130)" to="(950,150)"/>
+    <wire from="(570,110)" to="(680,110)"/>
+    <wire from="(720,210)" to="(720,230)"/>
+    <wire from="(850,130)" to="(870,130)"/>
+    <wire from="(210,140)" to="(240,140)"/>
+    <wire from="(610,130)" to="(610,170)"/>
+    <wire from="(760,70)" to="(760,110)"/>
+    <wire from="(150,100)" to="(240,100)"/>
+    <wire from="(740,110)" to="(760,110)"/>
+    <wire from="(300,100)" to="(320,100)"/>
+    <wire from="(510,100)" to="(530,100)"/>
+    <wire from="(510,120)" to="(530,120)"/>
+    <wire from="(610,130)" to="(680,130)"/>
+    <wire from="(90,230)" to="(100,230)"/>
+    <wire from="(90,170)" to="(100,170)"/>
+    <wire from="(90,200)" to="(100,200)"/>
+    <wire from="(980,100)" to="(990,100)"/>
+    <wire from="(1010,120)" to="(1020,120)"/>
+    <wire from="(820,140)" to="(830,140)"/>
+    <wire from="(820,150)" to="(830,150)"/>
+    <wire from="(670,150)" to="(680,150)"/>
+    <wire from="(720,230)" to="(730,230)"/>
+    <wire from="(910,120)" to="(990,120)"/>
+    <comp lib="0" loc="(100,230)" name="Tunnel">
+      <a name="label" val="R"/>
+    </comp>
+    <comp lib="0" loc="(210,140)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="clk"/>
     </comp>
-    <comp lib="1" loc="(930,200)" name="NOT Gate"/>
-    <comp lib="0" loc="(240,230)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="ld"/>
-    </comp>
-    <comp lib="4" loc="(470,30)" name="Counter">
+    <comp lib="3" loc="(570,110)" name="Adder">
       <a name="width" val="26"/>
-      <a name="max" val="0x3ffffff"/>
     </comp>
-    <comp lib="0" loc="(950,200)" name="Tunnel">
-      <a name="label" val="count"/>
+    <comp lib="3" loc="(910,120)" name="Comparator">
+      <a name="width" val="26"/>
+      <a name="mode" val="unsigned"/>
     </comp>
-    <comp lib="0" loc="(380,50)" name="Tunnel">
+    <comp lib="1" loc="(710,180)" name="OR Gate">
+      <a name="facing" val="north"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="0" loc="(730,230)" name="Tunnel">
+      <a name="label" val="ld"/>
+    </comp>
+    <comp lib="0" loc="(90,200)" name="Pin">
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(150,100)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="label" val="Sleep_Time"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(240,120)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="ld"/>
     </comp>
-    <comp lib="0" loc="(940,150)" name="Splitter">
+    <comp lib="0" loc="(100,200)" name="Tunnel">
+      <a name="label" val="clk"/>
+    </comp>
+    <comp lib="0" loc="(90,170)" name="Pin">
+      <a name="label" val="EN"/>
+    </comp>
+    <comp lib="0" loc="(1010,120)" name="Splitter">
       <a name="facing" val="west"/>
       <a name="incoming" val="8"/>
       <a name="appear" val="legacy"/>
@@ -203,12 +226,14 @@ end TCL_Generic;&#13;
       <a name="bit6" val="0"/>
       <a name="bit7" val="0"/>
     </comp>
-    <comp lib="0" loc="(180,210)" name="Pin">
-      <a name="width" val="8"/>
-      <a name="label" val="Sleep_Time"/>
-      <a name="labelloc" val="north"/>
+    <comp lib="0" loc="(100,170)" name="Tunnel">
+      <a name="label" val="ld"/>
     </comp>
-    <comp lib="0" loc="(790,160)" name="Splitter">
+    <comp lib="0" loc="(610,170)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="count"/>
+    </comp>
+    <comp lib="0" loc="(850,130)" name="Splitter">
       <a name="facing" val="west"/>
       <a name="incoming" val="26"/>
       <a name="bit1" val="0"/>
@@ -237,72 +262,56 @@ end TCL_Generic;&#13;
       <a name="bit24" val="1"/>
       <a name="bit25" val="1"/>
     </comp>
-    <comp lib="0" loc="(120,360)" name="Pin">
-      <a name="label" val="Reset"/>
+    <comp lib="0" loc="(950,150)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="count"/>
     </comp>
-    <comp lib="0" loc="(910,120)" name="Constant">
+    <comp lib="0" loc="(320,100)" name="Tunnel">
+      <a name="width" val="8"/>
+      <a name="label" val="val"/>
+    </comp>
+    <comp lib="0" loc="(670,150)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="clk"/>
+    </comp>
+    <comp lib="0" loc="(820,140)" name="Constant">
+      <a name="width" val="18"/>
+      <a name="value" val="0x3ffff"/>
+    </comp>
+    <comp lib="4" loc="(680,80)" name="Register">
+      <a name="width" val="26"/>
+    </comp>
+    <comp lib="4" loc="(240,70)" name="Register"/>
+    <comp lib="0" loc="(980,90)" name="Constant">
       <a name="facing" val="south"/>
       <a name="width" val="7"/>
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="1" loc="(450,40)" name="OR Gate">
-      <a name="size" val="30"/>
-    </comp>
-    <comp lib="0" loc="(450,80)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="count"/>
-    </comp>
-    <comp lib="0" loc="(330,210)" name="Tunnel">
-      <a name="width" val="8"/>
-      <a name="label" val="val"/>
-    </comp>
-    <comp lib="0" loc="(210,250)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="clk"/>
-    </comp>
-    <comp lib="0" loc="(120,330)" name="Pin">
-      <a name="label" val="CLK"/>
-    </comp>
-    <comp lib="0" loc="(130,360)" name="Tunnel">
-      <a name="label" val="R"/>
-    </comp>
-    <comp lib="3" loc="(840,150)" name="Comparator">
-      <a name="width" val="26"/>
-      <a name="mode" val="unsigned"/>
-    </comp>
-    <comp lib="0" loc="(120,300)" name="Pin">
-      <a name="label" val="EN"/>
-    </comp>
-    <comp lib="0" loc="(270,280)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="label" val="R"/>
-    </comp>
-    <comp lib="0" loc="(130,330)" name="Tunnel">
-      <a name="label" val="clk"/>
-    </comp>
-    <comp lib="0" loc="(140,300)" name="Tunnel">
-      <a name="label" val="ld"/>
-    </comp>
-    <comp lib="0" loc="(950,150)" name="Pin">
+    <comp lib="0" loc="(1020,120)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="8"/>
       <a name="label" val="TimeOut"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(410,30)" name="Tunnel">
-      <a name="facing" val="east"/>
+    <comp lib="0" loc="(90,230)" name="Pin">
+      <a name="label" val="Reset"/>
+    </comp>
+    <comp lib="0" loc="(270,170)" name="Tunnel">
+      <a name="facing" val="north"/>
       <a name="label" val="R"/>
     </comp>
-    <comp lib="4" loc="(240,180)" name="Register"/>
-    <comp lib="0" loc="(760,170)" name="Constant">
-      <a name="width" val="18"/>
-      <a name="value" val="0x3ffff"/>
+    <comp lib="0" loc="(510,120)" name="Constant">
+      <a name="width" val="26"/>
     </comp>
-    <comp lib="0" loc="(760,190)" name="Tunnel">
+    <comp lib="0" loc="(820,160)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="width" val="8"/>
       <a name="label" val="val"/>
+    </comp>
+    <comp lib="0" loc="(700,220)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="R"/>
     </comp>
   </circuit>
 </project>

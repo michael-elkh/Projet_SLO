@@ -1,15 +1,22 @@
 #Récupération du statut de la carte réseau.
 R0 = [0x81]
-#Boucle tant que la carte est hors ligne.
-R0 = R0 + R0
-bcz 0
+R1 = 1
+R0 = R0 - R1
+bcz 5
+R0 = 0
+[0x02] = R0
+[0x03] = R0
+b 0
 #Lorsque la carte est en ligne.
 R0 = [0x01]
 R1 = par R0
 R1 = R0 - R1
-bcz 8
-#Pause de 625ms en cas d'erreur de transmission
-R0 = 255
+bcz 11
+#Pause de 625ms en cas d'erreur de transmission, j'arrête le moteur et je braque à gauche.
+R0 = 0x00
+[0x02] = R0
+[0x03] = R0
+R0 = 625
 [0x00] = R0
 R1 = 1
 R0 = [0x00]
@@ -32,19 +39,15 @@ R2 = R2 >> 4
 R3 = R0 >> 6
 #Timer
 R0 = R3 + R3
-bcz 10
+bcz 7
 #Servo
 R0 = 1 
 R0 = R3 - R0
-bcz 14
+bcz 12
 #Moteur high-time
 R0 = 2
 R0 = R3 - R0
-bcz 19 
-#Moteur période
-R0 = 3
-R0 = R3 - R0
-bcz 22
+bcz 17 
 #Màj Timer
 R3 = R1 + R1
 bcz 4
@@ -53,7 +56,8 @@ R1 = R4 + R2
 [0x00] = R1
 b 0
 #Première partie
-R4 = R2
+R4 = 0
+R4 = R2 + R4
 b 0
 #Màj Servo
 R3 = R1 + R1
@@ -63,7 +67,8 @@ R1 = R5 + R2
 [0x02] = R1
 b 0
 #Première partie
-R5 = R2
+R5 = 0
+R5 = R2 + R5
 b 0
 #Màj Moteur high-time
 R3 = R1 + R1
@@ -73,15 +78,6 @@ R1 = R6 + R2
 [0x03] = R1
 b 0
 #Première partie
-R6 = R2
-b 0
-#Màj Moteur période
-R3 = R1 + R1
-bcz 4
-#Deuxième partie
-R1 = R7 + R2
-[0x83] = R1
-b 0
-#Première partie
-R7 = R2
+R6 = 0
+R6 = R2 + R6
 b 0

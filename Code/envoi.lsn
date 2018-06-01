@@ -31,7 +31,7 @@ bcn -2
 R0 = [0x05]
 #Envoi de la première partie
 R1 = R0 >> 3
-R2 = 0b00000000
+R2 = 0b10000000
 R1 = R1 + R2
 R1 = par R1
 [0x01] = R1
@@ -45,7 +45,7 @@ bcn -2
 #Envoi de la deuxième partie 
 R1 = R0 << 4
 R1 = R1 >> 3
-R2 = 0b00100000
+R2 = 0b10100000
 R1 = R1 + R2
 R1 = par R1
 [0x01] = R1

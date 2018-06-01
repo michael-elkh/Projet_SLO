@@ -15,7 +15,6 @@ def error_message(message, error_level='FATAL ERROR'):
     print message
     sys.exit(0)
 
-
 class LogiCompiler():
 
     specialchar = ['+', '-', '<<', '>>', '=', '[', ']', '#']
@@ -80,7 +79,7 @@ class LogiCompiler():
                 if instruction.data is 'label':
                     print operands[0][0]
                 else:
-                    print instruction.data, ' : ', ' '.join(operands[0])
+                    print 'N°', self.current_line-1, ':', instruction.data, '-', str.format('0x{:04X}', int(hex(int(instruction.data, 2)), 16)), ':', ' '.join(operands[0])
                     binary_list.append(instruction.data)
             else:
                 error_message('On line ' + str(self.current_line))
@@ -299,6 +298,9 @@ if __name__ == '__main__':
     if len(binary_list) > 128:
         print len(binary_list), 'instructions found. Max limit is 128'
         sys.exit(0)
+    else:
+        while(len(binary_list) < 128):
+            binary_list.append('0000000000000000')
     circ_manager = CircManager()
     circ_manager.append_constant_from_binary_list(binary_list)
     if os.path.isfile(out_file):
