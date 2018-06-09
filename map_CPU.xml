@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<LogisimGoesFPGABoardMapInformation>
+   <GlobalMapInformation BoardName="BASYS3" ToplevelCircuitName="main"/>
+   <MAPPEDCOMPONENT_1 Height="8" Key="PIN: /CAN_X_INPUT#Pin0" LocationX="657" LocationY="112" Width="8"/>
+   <MAPPEDCOMPONENT_2 Height="8" Key="PIN: /CAN_Y_INPUT#Pin0" LocationX="670" LocationY="112" Width="8"/>
+   <MAPPEDCOMPONENT_3 Height="8" Key="PIN: /CS_X#Pin0" LocationX="657" LocationY="124" Width="8"/>
+   <MAPPEDCOMPONENT_4 Height="8" Key="PIN: /CS_Y#Pin0" LocationX="670" LocationY="124" Width="8"/>
+   <MAPPEDCOMPONENT_5 Height="8" Key="PIN: /D_IO_CLK_X#Pin0" LocationX="657" LocationY="99" Width="8"/>
+   <MAPPEDCOMPONENT_6 Height="8" Key="PIN: /D_IO_CLK_Y#Pin0" LocationX="670" LocationY="99" Width="8"/>
+   <MAPPEDCOMPONENT_7 Height="8" Key="PIN: /MOTOR_OUTPUT#Pin0" LocationX="657" LocationY="212" Width="8"/>
+   <MAPPEDCOMPONENT_8 Height="14" Key="PIN: /Reset#Pin0" LocationX="536" LocationY="235" Width="14"/>
+   <MAPPEDCOMPONENT_9 Height="8" Key="PIN: /SERVO_OUTPUT#Pin0" LocationX="657" LocationY="225" Width="8"/>
+   <MAPPEDCOMPONENT_a Height="8" Key="PIN: /UART_INPUT#Pin0" LocationX="76" LocationY="275" Width="8"/>
+   <MAPPEDCOMPONENT_b Height="8" Key="PIN: /UART_OUTPUT#Pin0" LocationX="88" LocationY="275" Width="8"/>
+   <MAPPEDCOMPONENT_c Height="23" Key="PIN: /clk#Pin0" LocationX="321" LocationY="237" Width="133"/>
+</LogisimGoesFPGABoardMapInformation>

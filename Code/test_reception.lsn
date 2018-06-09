@@ -10,7 +10,10 @@ b 0
 R1 = R0 >> 6
 R2 = 1
 R2 = R1 - R2
-bcz 2
+bcz 5
+R2 = 2
+R2 = R1 - R2
+bcz 12
 b 0
 #N° paquet
 R1 = R0 << 2
@@ -24,3 +27,17 @@ b 0
 #Deuxième partie
 R5 = R6 + R3
 [0x02] = R5
+b 0
+#N° paquet
+R1 = R0 << 2
+R1 = R1 >> 7
+R2 = 1
+R2 = R1 - R2
+bcz 3
+#Première partie
+R7 = R3 << 4
+b 0
+#Deuxième partie
+R5 = R7 + R3
+[0x03] = R5
+b 0
