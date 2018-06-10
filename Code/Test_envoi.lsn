@@ -9,11 +9,10 @@ R1 = par R1
 #Pause inter-envois
 R1 = 5
 [0x00] = R1
-R1 = 1
-[0x04] = R7
 R2 = [0x00]
+R1 = 1
 R2 = R2 - R1
-bcn -2
+bcn -3
 #Deuxième partie
 R1 = 0b01100000
 R2 = R0 << 4
@@ -25,11 +24,10 @@ R1 = par R1
 #Pause inter-envois
 R1 = 5
 [0x00] = R1
-R1 = 1
-[0x04] = R7
 R2 = [0x00]
+R1 = 1
 R2 = R2 - R1
-bcn -2
+bcn -3
 #Motor
 R0 = [0x05]
 #Première partie
@@ -41,11 +39,10 @@ R1 = par R1
 #Pause inter-envois
 R1 = 5
 [0x00] = R1
-R1 = 1
-[0x04] = R7
 R2 = [0x00]
+R1 = 1
 R2 = R2 - R1
-bcn -2
+bcn -3
 #Deuxième partie
 R1 = 0b10100000
 R2 = R0 << 4
@@ -57,9 +54,8 @@ R1 = par R1
 #Pause inter-envois
 R1 = 5
 [0x00] = R1
-R1 = 1
-[0x04] = R7
 R2 = [0x00]
+R1 = 1
 R2 = R2 - R1
-bcn -2
+bcn -3
 b 0
