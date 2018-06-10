@@ -38,6 +38,6 @@ bcz 3
 R7 = R3 << 4
 b 0
 #Deuxième partie
-R5 = R7 + R3
-[0x03] = R5
+R4 = R7 + R3
+[0x03] = R4
 b 0
