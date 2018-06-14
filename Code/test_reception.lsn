@@ -10,11 +10,6 @@ b 0
 R0 = [0x01]
 R3 = R0 << 3
 R3 = R3 >> 4
-#Parity check
-R1 = par R0
-R1 = R0 - R1
-bcz 2
-b 0
 #Id périph
 R1 = R0 >> 6
 R2 = 1

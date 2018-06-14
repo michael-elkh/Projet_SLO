@@ -4,7 +4,6 @@ R0 = [0x04]
 R1 = 0b01000000
 R2 = R0 >> 3
 R1 = R1 + R2
-R1 = par R1
 [0x01] = R1
 #Pause inter-envois
 R1 = 5
@@ -18,7 +17,6 @@ R1 = 0b01100000
 R2 = R0 << 4
 R2 = R2 >> 3
 R1 = R1 + R2
-R1 = par R1
 [0x01] = R1
 [0x02] = R0
 #Pause inter-envois
@@ -34,7 +32,6 @@ R0 = [0x05]
 R1 = 0b10000000
 R2 = R0 >> 3
 R1 = R1 + R2
-R1 = par R1
 [0x01] = R1
 #Pause inter-envois
 R1 = 5
@@ -48,7 +45,6 @@ R1 = 0b10100000
 R2 = R0 << 4
 R2 = R2 >> 3
 R1 = R1 + R2
-R1 = par R1
 [0x01] = R1
 [0x03] = R0
 #Pause inter-envois
