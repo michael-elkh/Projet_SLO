@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<LogisimGoesFPGABoardMapInformation>
+   <GlobalMapInformation BoardName="BASYS3" ToplevelCircuitName="main"/>
+   <MAPPEDCOMPONENT_1 Height="6" Key="BUS: /Ins_Status#Pin0" LocationX="160" LocationY="272" Width="6"/>
+   <MAPPEDCOMPONENT_2 Height="14" Key="BUS: /Ins_Status#Pin1" LocationX="92" LocationY="295" Width="14"/>
+   <MAPPEDCOMPONENT_3 Height="14" Key="BUS: /Ins_Status#Pin2" LocationX="131" LocationY="295" Width="14"/>
+   <MAPPEDCOMPONENT_4 Height="14" Key="BUS: /Ins_Status#Pin3" LocationX="168" LocationY="295" Width="14"/>
+   <MAPPEDCOMPONENT_5 Height="8" Key="BUS: /Seg_Select#Pin0" LocationX="273" LocationY="234" Width="23"/>
+   <MAPPEDCOMPONENT_6 Height="8" Key="BUS: /Seg_Select#Pin1" LocationX="225" LocationY="234" Width="23"/>
+   <MAPPEDCOMPONENT_7 Height="8" Key="BUS: /Seg_Select#Pin2" LocationX="180" LocationY="234" Width="23"/>
+   <MAPPEDCOMPONENT_8 Height="8" Key="BUS: /Seg_Select#Pin3" LocationX="130" LocationY="234" Width="23"/>
+   <MAPPEDCOMPONENT_9 Height="8" Key="PIN: /CAN_X_INPUT#Pin0" LocationX="657" LocationY="112" Width="8"/>
+   <MAPPEDCOMPONENT_a Height="8" Key="PIN: /CAN_Y_INPUT#Pin0" LocationX="670" LocationY="112" Width="8"/>
+   <MAPPEDCOMPONENT_b Height="8" Key="PIN: /CS_X#Pin0" LocationX="657" LocationY="124" Width="8"/>
+   <MAPPEDCOMPONENT_c Height="8" Key="PIN: /CS_Y#Pin0" LocationX="670" LocationY="124" Width="8"/>
+   <MAPPEDCOMPONENT_d Height="8" Key="PIN: /D_IO_CLK_X#Pin0" LocationX="657" LocationY="99" Width="8"/>
+   <MAPPEDCOMPONENT_e Height="8" Key="PIN: /D_IO_CLK_Y#Pin0" LocationX="670" LocationY="99" Width="8"/>
+   <MAPPEDCOMPONENT_f Height="54" Key="PIN: /Insane#Pin0" LocationX="78" LocationY="323" Width="30"/>
+   <MAPPEDCOMPONENT_10 Height="8" Key="PIN: /MOTOR_OUTPUT#Pin0" LocationX="657" LocationY="212" Width="8"/>
+   <MAPPEDCOMPONENT_11 Height="14" Key="PIN: /Online#Pin0" LocationX="649" LocationY="295" Width="14"/>
+   <MAPPEDCOMPONENT_12 Height="14" Key="PIN: /Reset#Pin0" LocationX="536" LocationY="235" Width="14"/>
+   <MAPPEDCOMPONENT_13 Height="8" Key="PIN: /SERVO_OUTPUT#Pin0" LocationX="657" LocationY="225" Width="8"/>
+   <MAPPEDCOMPONENT_14 Height="8" Key="PIN: /UART_INPUT#Pin0" LocationX="76" LocationY="275" Width="8"/>
+   <MAPPEDCOMPONENT_15 Height="8" Key="PIN: /UART_OUTPUT#Pin0" LocationX="88" LocationY="275" Width="8"/>
+   <MAPPEDCOMPONENT_16 Height="5" Key="PIN: /a#Pin0" LocationX="136" LocationY="245" Width="17"/>
+   <MAPPEDCOMPONENT_17 Height="12" Key="PIN: /b#Pin0" LocationX="154" LocationY="248" Width="5"/>
+   <MAPPEDCOMPONENT_18 Height="12" Key="PIN: /c#Pin0" LocationX="154" LocationY="262" Width="5"/>
+   <MAPPEDCOMPONENT_19 Height="23" Key="PIN: /clk#Pin0" LocationX="321" LocationY="237" Width="133"/>
+   <MAPPEDCOMPONENT_1a Height="5" Key="PIN: /d#Pin0" LocationX="136" LocationY="274" Width="17"/>
+   <MAPPEDCOMPONENT_1b Height="12" Key="PIN: /e#Pin0" LocationX="130" LocationY="263" Width="5"/>
+   <MAPPEDCOMPONENT_1c Height="12" Key="PIN: /f#Pin0" LocationX="130" LocationY="249" Width="5"/>
+   <MAPPEDCOMPONENT_1d Height="5" Key="PIN: /g#Pin0" LocationX="138" LocationY="258" Width="14"/>
+</LogisimGoesFPGABoardMapInformation>
