@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <LogisimGoesFPGABoardMapInformation>
    <GlobalMapInformation BoardName="BASYS3" ToplevelCircuitName="main"/>
-   <MAPPEDCOMPONENT_1 Height="6" Key="BUS: /Ins_Status#Pin0" LocationX="160" LocationY="272" Width="6"/>
-   <MAPPEDCOMPONENT_2 Height="14" Key="BUS: /Ins_Status#Pin1" LocationX="92" LocationY="295" Width="14"/>
-   <MAPPEDCOMPONENT_3 Height="14" Key="BUS: /Ins_Status#Pin2" LocationX="131" LocationY="295" Width="14"/>
-   <MAPPEDCOMPONENT_4 Height="14" Key="BUS: /Ins_Status#Pin3" LocationX="168" LocationY="295" Width="14"/>
+   <MAPPEDCOMPONENT_1 Height="14" Key="BUS: /FULL_Status#Pin0" LocationX="92" LocationY="295" Width="14"/>
+   <MAPPEDCOMPONENT_2 Height="14" Key="BUS: /FULL_Status#Pin1" LocationX="131" LocationY="295" Width="14"/>
+   <MAPPEDCOMPONENT_3 Height="14" Key="BUS: /FULL_Status#Pin2" LocationX="168" LocationY="295" Width="14"/>
+   <MAPPEDCOMPONENT_4 Height="14" Key="BUS: /FULL_Status#Pin3" LocationX="203" LocationY="295" Width="14"/>
    <MAPPEDCOMPONENT_5 Height="8" Key="BUS: /Seg_Select#Pin0" LocationX="273" LocationY="234" Width="23"/>
    <MAPPEDCOMPONENT_6 Height="8" Key="BUS: /Seg_Select#Pin1" LocationX="225" LocationY="234" Width="23"/>
    <MAPPEDCOMPONENT_7 Height="8" Key="BUS: /Seg_Select#Pin2" LocationX="180" LocationY="234" Width="23"/>
@@ -15,7 +15,7 @@
    <MAPPEDCOMPONENT_c Height="8" Key="PIN: /CS_Y#Pin0" LocationX="670" LocationY="124" Width="8"/>
    <MAPPEDCOMPONENT_d Height="8" Key="PIN: /D_IO_CLK_X#Pin0" LocationX="657" LocationY="99" Width="8"/>
    <MAPPEDCOMPONENT_e Height="8" Key="PIN: /D_IO_CLK_Y#Pin0" LocationX="670" LocationY="99" Width="8"/>
-   <MAPPEDCOMPONENT_f Height="54" Key="PIN: /Insane#Pin0" LocationX="78" LocationY="323" Width="30"/>
+   <MAPPEDCOMPONENT_f Height="54" Key="PIN: /FULL#Pin0" LocationX="78" LocationY="323" Width="30"/>
    <MAPPEDCOMPONENT_10 Height="8" Key="PIN: /MOTOR_OUTPUT#Pin0" LocationX="657" LocationY="212" Width="8"/>
    <MAPPEDCOMPONENT_11 Height="14" Key="PIN: /Online#Pin0" LocationX="649" LocationY="295" Width="14"/>
    <MAPPEDCOMPONENT_12 Height="14" Key="PIN: /Reset#Pin0" LocationX="536" LocationY="235" Width="14"/>
